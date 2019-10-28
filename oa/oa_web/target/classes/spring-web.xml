@@ -13,8 +13,11 @@
     
     <context:component-scan base-package="com.yzh.oa.controller"/>
     <mvc:annotation-driven/>
-    <mvc:default-servlet-handler/>
+    <mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources location="/assets/" mapping="/assets/**"/>
+    <mvc:resources location="/vendor/" mapping="/vendor/**"/> 
     
+       
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     	<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
     	<property name="prefix" value="/WEB-INF/pages/"/>
