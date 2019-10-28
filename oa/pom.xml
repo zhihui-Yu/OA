@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.yzh</groupId>
+  <artifactId>oa</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>oa_web</module>
+  	<module>oa-dao</module>
+  	<module>oa-service</module>
+  </modules>
+  
+  <properties>
+  	<servlet-version>3.0.1</servlet-version>
+  	<jsp-version>2.2</jsp-version>
+  	<jstl-version>1.2</jstl-version>
+  	<mysql-version>5.1.38</mysql-version>
+  	<mybatis-version>3.2.7</mybatis-version>
+  	<mybatis-spring-version>1.2.3</mybatis-spring-version>
+  	<spring-version>4.1.6.RELEASE</spring-version>
+  	<aspectjweaver-version>1.8.6</aspectjweaver-version>
+  </properties>
+  
+  
+</project>
