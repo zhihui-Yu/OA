@@ -20,7 +20,10 @@ public class LoginInterceptor implements HandlerInterceptor{
 			throws Exception {
 		//获取URl
 		String url = request.getRequestURI();
-		
+		//判断是不是包含login 是则放行
+		if(url.toLowerCase().indexOf("login")>=0){
+			return true;
+		}
 		//判断是不是登入过  是则放行
 		HttpSession session = request.getSession();
 		if(session.getAttribute("employee") != null){
