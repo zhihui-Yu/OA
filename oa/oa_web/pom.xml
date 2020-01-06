@@ -114,11 +114,22 @@
 
 	<build>
 		<!-- 解决不加载resource外的xml文件问题 要resource标签修改 -->
-		<!-- <resources> <resource> <directory>src/main/java</directory> <includes> 
-			<include>**/*.xml</include> </includes> </resource> <resource> <directory>src/main/resources</directory> 
-			<includes> <include>**/*.xml</include> <include>**/*.properties</include> 
-			</includes> </resource> </resources> -->
-
+		<!-- <resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.xml</include>
+					<include>**/*.properties</include>
+				</includes>
+			</resource>
+		</resources>
+ -->
 
 		<pluginManagement>
 			<plugins>
